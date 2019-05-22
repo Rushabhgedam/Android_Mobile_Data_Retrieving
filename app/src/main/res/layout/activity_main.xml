@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:id="@+id/scrollView"
+        android:layout_height="250dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border"
+                android:hint="Call Details" />
+        </ScrollView>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/listmsj"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_height="250dp">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:hint="Location"
+            />
+    </ScrollView>
+    <ListView
+        android:id="@+id/listmsj"
+        android:layout_width="200dp"
+        android:layout_toRightOf="@+id/scrollView"
+        android:background="@drawable/my_border"
+        android:layout_height="150dp"
+        ></ListView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/scrollView2"
+        android:layout_toRightOf="@+id/scrollView">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:background="@drawable/my_border"
+            android:hint="Installed Apps"/>
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4"
+        android:background="@drawable/my_border"
+        android:layout_below="@+id/scrollView"
+        android:hint="email logged in"
+        />
+    <ScrollView
+        android:layout_width="200dp"
+        android:layout_below="@+id/tv4"
+        android:id="@+id/sv5"
+        android:layout_height="200dp">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/tv5"
+        android:background="@drawable/my_border"
+        android:hint="Mobile Configuration Details"/>
+    </ScrollView>
+    <TextView
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:layout_below="@+id/sv5"
+    android:id="@+id/tv6"
+    android:background="@drawable/my_border"
+    android:hint="Battery Details"/>
+
+
+</RelativeLayout>
